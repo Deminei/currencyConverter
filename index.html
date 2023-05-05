@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="icons8-e-commerce-dotted-32.png"
+    />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Currency Converter</h1>
+    <div class="converter">
+      <label for="baseCurrency">Base Currency:</label>
+      <select id="baseCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="SEK">SEK</option>
+        <option value="NZD">NZD</option>
+      </select>
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" value="1" min="0" />
+      <label for="targetCurrency">Target Currency:</label>
+      <select id="targetCurrency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="JPY">JPY</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="SEK">SEK</option>
+        <option value="NZD">NZD</option>
+      </select>
+      <p>Converted Amount: <span id="convertedAmount"></span></p>
+      <button id="historicalRates">View Historical Rates</button>
+      <div id="historicalRatesTable"></div>
+      <button id="saveFavorite">Save Favorite</button>
+      <div id="favoriteCurrencyPairs"><p>&darr; Favorites &darr;</p></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
